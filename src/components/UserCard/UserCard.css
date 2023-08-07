@@ -1,0 +1,54 @@
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 300px;
+  display: inline-block;
+}
+
+.user-card-header {
+  background-color: skyblue;
+  border-radius: 8px 8px 0 0;
+  padding: 8px;
+  text-align: center;
+}
+
+.user-card-name {
+  margin: 0;
+}
+
+.user-card-body {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.user-card-email,
+.user-card-phone {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.user-card-delete > button {
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 0 0 8px 8px;
+  border-width: 0px;
+  background-color: powderblue;
+  font-size: 17px;
+  color: darkslategrey;
+  cursor: pointer;
+}
+
+.user-card-delete > button:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+.user-card-delete > button:active {
+  background-color: lightsteelblue;
+  color: grey;
+}

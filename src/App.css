@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.app-title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: deepskyblue;
+  font-style: italic;
+  color: white;
+}
