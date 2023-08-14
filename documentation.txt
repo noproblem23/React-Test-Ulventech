@@ -20,10 +20,13 @@ Each user card displays user information.
 
 4. UserCard.js:
 
-Renders a card displaying user information, including name, email, and phone.
+Renders a card displaying user information, including name, email, phone, and address.
 Provides a "Remove" button to delete the user by dispatching the deleteUser action.
 
-5. actions/index.js:
+5. SearchBar.js
+Searchs userlists by name, email, phone, and address in the Searchbar inputbox and shows the result.
+
+6. actions/index.js:
 
 Defines action types and action creators related to loading, fetching users, API errors, and deleting users.
 fetchUsers action creator fetches user data from an API using fetch and Redux-Thunk middleware.

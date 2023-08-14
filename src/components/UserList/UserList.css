@@ -1,4 +1,6 @@
 .user-lists {
   text-align: left;
   margin-left: 50px;
+  overflow-y: scroll;
+  height: 82vh;
 }

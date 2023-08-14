@@ -4,6 +4,7 @@ export const IS_LOADING = "IS_LOADING";
 export const GET_USERS = "GET_USERS";
 export const API_ERROR = "API_ERROR";
 export const DELETE_USER = "DELETE_USER";
+export const SEARCH = "SEARCH";
 
 /**
  * action that get userlists
@@ -38,6 +39,14 @@ export function deleteUser(userId) {
   return {
     type: DELETE_USER,
     userId: userId,
+  };
+}
+
+//filter by search bar text
+export function setSearchText(text) {
+  return {
+    type: SEARCH,
+    searchText: text,
   };
 }
 

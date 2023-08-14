@@ -1,0 +1,13 @@
+.searchbar {
+  padding: 10px;
+  background-color: lightgrey;
+}
+
+.searchbar > input {
+  width: 90%;
+  height: 30px;
+  border-radius: 7px;
+  border-color: white;
+  font-size: 17px;
+  padding-left: 20px;
+}

@@ -52,3 +52,12 @@
   background-color: lightsteelblue;
   color: grey;
 }
+
+.user-card-address > p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.user-card-address :first-child {
+  font-weight: bold;
+}

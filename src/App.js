@@ -1,8 +1,9 @@
-import "./App.css";
 import { connect } from "react-redux";
-import UserList from "./components/UserList";
-import { fetchUsers } from "./actions";
 import { useEffect } from "react";
+import UserList from "./components/UserList";
+import { fetchUsers, setSearchText } from "./actions";
+import SearchBar from "./components/SearchBar";
+import "./App.css";
 
 function App(props) {
   useEffect(() => {
@@ -12,10 +13,11 @@ function App(props) {
   return (
     <div className="App">
       <h1 className="app-title">User Lists </h1>
+      <SearchBar setSearch={props.setSearch} />
       {Object.keys(props.apiError).length ? (
         <h3>We cannnot reach out the server!</h3>
       ) : (
-        <UserList users={props.users} />
+        <UserList users={props.users} search={props.search} />
       )}
     </div>
   );
@@ -26,6 +28,7 @@ const mapStateToProps = (state) => {
     users: state.list,
     isLoading: state.isLoading,
     apiError: state.apiError,
+    search: state.search,
   };
 };
 
@@ -33,6 +36,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     getUsers: () => {
       dispatch(fetchUsers());
+    },
+    setSearch: (text) => {
+      dispatch(setSearchText(text));
     },
   };
 };
